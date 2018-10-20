@@ -2362,7 +2362,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			width: 70%;
 		}
 
 			.image.fit img {
@@ -2558,11 +2558,12 @@ input, select, textarea {
 	ul.major-icons {
 		list-style: none;
 		padding-left: 0;
+		/* overflow: hidden; */
 	}
 
 		ul.major-icons li {
 			display: inline-block;
-			padding: 2.5em;
+			padding: 4.5em;
 			text-align: center;
 		}
 
@@ -2574,11 +2575,11 @@ input, select, textarea {
 				border-radius: 4px;
 				border: solid 1px rgba(144, 144, 144, 0.5);
 				display: inline-block;
-				height: 8em;
+				height: 10em;
 				line-height: 8em;
 				margin: 0;
 				text-align: center;
-				width: 8em;
+				width: 10em;
 			}
 
 				ul.major-icons li .icon:before {
@@ -2893,7 +2894,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		background-image: url("../../images/ggb_background.jpg");
-		background-position: top left,						center center,					center center;
+		background-position:						center center,					center center;
 		background-size: cover;
 		overflow: hidden;
 		position: relative;
@@ -2902,7 +2903,7 @@ input, select, textarea {
 
 	#header .overlay {
 		padding: 9em 0 9em 0 ;
-		background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+		background: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 		height: 100%;
 		width: 100%;
 		/* border-radius: 100%; */
@@ -3263,7 +3264,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			#header .overlay {
 				padding: 5em 0 5em 0 ;
 				background-attachment: scroll;
 			}
@@ -3305,7 +3306,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			#header .overlay {
 				padding: 8em 3em 8em 3em ;
 			}
 
@@ -3396,7 +3397,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			#header .overlay {
 				padding: 4em 3em 4em 3em ;
 			}
 
@@ -3433,7 +3434,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			#header .overlay {
 				padding: 4em 2em 4em 2em ;
 			}
 
@@ -3492,4 +3493,22 @@ input, select, textarea {
 				padding: 2em 1em 2em 1em ;
 			}
 
+	}
+
+	/* =========== CUSTOM STYLING ================ */
+
+	.skill-img {
+		max-width: 100%;
+		max-height: 100%;
+		transform: rotate(-45deg);
+		padding: 20px;
+	}
+
+	.major-icons {
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.main.style2 {
+		padding: 0;
 	}

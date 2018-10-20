@@ -30,3 +30,18 @@
 		$('.scrolly').scrolly();
 
 })(jQuery);
+
+const skillsList = document.getElementById('skills-list');
+let translations= 0;
+
+document.addEventListener('DOMContentLoaded', () => {
+	setInterval(() => {
+		if (translations < (skillsList.childElementCount - 4)) {
+			translations += 1;
+		} else {
+			translations = 0;
+		}
+
+		skillsList.style.transform = `translateX(${-19.5 * translations}em)`;
+	}, 2000)
+});
