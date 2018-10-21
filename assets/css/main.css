@@ -2043,7 +2043,7 @@ input, select, textarea {
 			display: inline-block;
 			height: 1px;
 			margin-top: 1.5em;
-			width: 6em;
+			width: 95%;
 		}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -2361,7 +2361,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 auto;
+			margin-bottom: 20px;
 			width: 70%;
 		}
 
@@ -3243,7 +3244,7 @@ input, select, textarea {
 		/* List */
 
 			ul.major-icons li {
-				padding: 2em;
+				padding: 4em;
 			}
 
 				ul.major-icons li .icon {
@@ -3289,7 +3290,7 @@ input, select, textarea {
 		/* List */
 
 			ul.major-icons li {
-				padding: 2em;
+				padding: 3.5em;
 			}
 
 				ul.major-icons li .icon {
@@ -3359,13 +3360,13 @@ input, select, textarea {
 		/* List */
 
 			ul.major-icons li {
-				padding: 1.5em;
+				padding: 3.5em;
 			}
 
 				ul.major-icons li .icon {
-					height: 5em;
-					line-height: 5em;
-					width: 5em;
+					height: 7em;
+					line-height: 7em;
+					width: 7em;
 				}
 
 					ul.major-icons li .icon:before {
@@ -3416,6 +3417,18 @@ input, select, textarea {
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+
+		ul.major-icons li {
+				padding: 3.5em;
+			}
+
+				ul.major-icons li .icon {
+					height: 7em;
+					line-height: 7em;
+					width: 7em;
+				}
+
+
 
 		/* Button */
 
@@ -3469,6 +3482,16 @@ input, select, textarea {
 
 	@media screen and (max-width: 320px) {
 
+		ul.major-icons li {
+				padding: 6em;
+			}
+
+			ul.major-icons li .icon {
+					height: 8em;
+					line-height: 8em;
+					width: 8em;
+				}
+
 		/* Basic */
 
 			html, body {
@@ -3507,8 +3530,13 @@ input, select, textarea {
 	.major-icons {
 		text-align: center;
 		white-space: nowrap;
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		transition: transform 1s;
 	}
 
 	.main.style2 {
 		padding: 0;
+		overflow: hidden;
 	}

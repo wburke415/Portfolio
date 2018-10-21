@@ -32,16 +32,32 @@
 })(jQuery);
 
 const skillsList = document.getElementById('skills-list');
-let translations= 0;
+let translations = 0;
+
+let translateAmount = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
 	setInterval(() => {
-		if (translations < (skillsList.childElementCount - 4)) {
-			translations += 1;
-		} else {
-			translations = 0;
-		}
-
-		skillsList.style.transform = `translateX(${-19.5 * translations}em)`;
-	}, 2000)
+		skillsAnimation();		
+	}, 3000)
 });
+
+function skillsAnimation() {
+	if (window.innerWidth > 1140) {
+		translateAmount = -19;
+	} else if (window.innerWidth > 980) {
+		translateAmount = -16;
+	} else if (window.innerWidth > 420) {
+		translateAmount = -14;
+	} else {
+		translateAmount = -20;
+	}
+
+	if (translations < (skillsList.childElementCount - 4)) {
+		translations += 1;
+	} else {
+		translations = 0;
+	}
+
+	skillsList.style.transform = `translateX(${translateAmount * translations}em)`;
+}
