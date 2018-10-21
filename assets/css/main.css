@@ -3540,3 +3540,17 @@ input, select, textarea {
 		padding: 0;
 		overflow: hidden;
 	}
+
+	/* #header {
+		height: -webkit-fill-available;
+	}
+
+	.overlay {
+		height: -webkit-fill-available;
+	} */
+
+	.image.fit.project-img {
+		margin: 0;
+		margin-bottom: 10px;
+		width: 100%;
+	}
