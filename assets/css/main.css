@@ -2551,7 +2551,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.5em;
+				font-size: 2em;
 			}
 
 /* Major Icons */
@@ -2903,7 +2903,7 @@ input, select, textarea {
 	}
 
 	#header .overlay {
-		padding: 9em 0 9em 0 ;
+		padding: 14.5em 0;
 		background: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 		height: 100%;
 		width: 100%;
@@ -3582,7 +3582,7 @@ input, select, textarea {
 	}
 
 	#resume-button {
-		margin: 30px 0 10px 0;
+		margin: 30px 0 25px 0;
 	}
 
 	#resume-button a {
@@ -3600,7 +3600,7 @@ input, select, textarea {
 	}
 
 	.email-form input, .email-form textarea {
-		background: rgb(240, 240, 240);
+		background: rgb(250, 250, 250);
 	}
 
 	#submit-email {
@@ -3611,4 +3611,9 @@ input, select, textarea {
 
 	.copyright {
 		margin: 20px 5px;
+	}
+
+	.contact-container .icons {
+		display: flex;
+		justify-content: space-evenly;
 	}
