@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			email: 								document.getElementById('email-field').value,
 			message:							document.getElementById('message-field').value
 		};
-
+		
 		$.ajax({
 			url: 'messages',
 			method: 'POST',
 			data: { message },
 			headers: { 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content') }
 		}).then(response => {
-			debugger;
+			console.log(response);
 		});
 	});
 
