@@ -3569,11 +3569,11 @@ input, select, textarea {
 		display: flex;
 	}
 
-	.email-form textarea {
+	#email-form textarea {
 		margin: 20px 0;
 	}
 
-	.name-field {
+	#name-field {
 		margin-right: 3em;
 	}
 
@@ -3594,12 +3594,12 @@ input, select, textarea {
 		justify-content: space-around;
 	}
 
-	.email-form {
+	#email-form {
 		color: black;
 		margin: 10px;
 	}
 
-	.email-form input, .email-form textarea {
+	#email-form input, #message-field {
 		background: rgb(250, 250, 250);
 	}
 

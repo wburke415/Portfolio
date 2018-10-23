@@ -35,6 +35,23 @@ let translations = 0;
 let translateAmount = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	// document.getElementById('email-form').addEventListener('submit', (e) => {
+	// 	e.preventDefault();
+	// 	let emailData = {
+	// 		name: 		document.getElementById('name-field').value,
+	// 		email: 		document.getElementById('email-field').value,
+	// 		message:	document.getElementById('message-field').value
+	// 	};
+
+	// 	$.ajax({
+	// 		url: 'messages',
+	// 		method: 'POST',
+	// 		data: { emailData }
+	// 	});
+	// });
+
+
 	setInterval(() => {
 		skillsAnimation();		
 	}, 3000)
