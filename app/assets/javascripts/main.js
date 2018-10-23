@@ -38,10 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	document.getElementById('email-form').addEventListener('submit', (e) => {
 		e.preventDefault();
+		let nameField = document.getElementById('name-field');
+		let emailField = document.getElementById('email-field');
+		let messageField = document.getElementById('message-field');
+
 		let message = {
-			name: 								document.getElementById('name-field').value,
-			email: 								document.getElementById('email-field').value,
-			message:							document.getElementById('message-field').value
+			name: 								nameField.value,
+			email: 								emailField.value,
+			message:							messageField.value
 		};
 
 		$.ajax({
@@ -56,6 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			emailResponse.innerText = response[0];
 
 			submitAndResponse.insertBefore(emailResponse, submitButton);
+			nameField.innerText = '';
+			emailField.innerTest = '';
+			messageField.innerText = '';
 		});
 	});
 
