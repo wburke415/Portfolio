@@ -36,20 +36,23 @@ let translateAmount = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// document.getElementById('email-form').addEventListener('submit', (e) => {
-	// 	e.preventDefault();
-	// 	let emailData = {
-	// 		name: 		document.getElementById('name-field').value,
-	// 		email: 		document.getElementById('email-field').value,
-	// 		message:	document.getElementById('message-field').value
-	// 	};
+	document.getElementById('email-form').addEventListener('submit', (e) => {
+		e.preventDefault();
+		let message = {
+			name: 								document.getElementById('name-field').value,
+			email: 								document.getElementById('email-field').value,
+			message:							document.getElementById('message-field').value
+		};
 
-	// 	$.ajax({
-	// 		url: 'messages',
-	// 		method: 'POST',
-	// 		data: { emailData }
-	// 	});
-	// });
+		$.ajax({
+			url: 'messages',
+			method: 'POST',
+			data: { message },
+			headers: { 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content') }
+		}).then(response => {
+			debugger;
+		});
+	});
 
 
 	setInterval(() => {

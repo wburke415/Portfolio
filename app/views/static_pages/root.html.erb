@@ -143,10 +143,10 @@
 							<form id="email-form" action="<%= messages_url %>" method="post">
 								<input id="auth-token" type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
 								<div class="name-email">
-									<input id="name-field" type="text" name="name" placeholder="Name" required />
-									<input id="email-field" type="email" name="email" placeholder="Email" required />
+									<input id="name-field" type="text" name="message[name]" placeholder="Name" required />
+									<input id="email-field" type="email" name="message[email]" placeholder="Email" required />
 								</div>
-								<textarea id="message-field" name="message" placeholder="Message" rows="3" cols="70" required ></textarea>
+								<textarea id="message-field" name="message[message]" placeholder="Message" rows="3" cols="70" required ></textarea>
 								<input id="submit-email" type="submit" value="Send">
 							</form>
 							<!-- <li><a href="#" class="button wide">Learn More</a></li> -->
