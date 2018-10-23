@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
         format.json { render json: 'Message delivered successfully.', status: 200 }
       # else
       #   format.json { render json: 'Message delivery failed.', status: 422 }
-      end
+      # end
     end
   end
 
