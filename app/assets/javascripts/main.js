@@ -58,11 +58,16 @@ document.addEventListener('DOMContentLoaded', () => {
 			let submitButton = document.getElementById('submit-email');
 			let emailResponse = document.createElement('SPAN');
 			emailResponse.innerText = response[0];
+			emailResponse.id = 'email-response'
 
 			submitAndResponse.insertBefore(emailResponse, submitButton);
 			nameField.value = '';
 			emailField.value = '';
 			messageField.value = '';
+
+			setTimeout(() => {
+				emailResponse.remove();
+			}, 10000)
 		});
 	});
 
