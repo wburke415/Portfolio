@@ -26,7 +26,7 @@
 			}, 100);
 		});
 
-	// Scrolly.
+	// = Scrolly.
 		$('.scrolly').scrolly();
 
 })(jQuery);
