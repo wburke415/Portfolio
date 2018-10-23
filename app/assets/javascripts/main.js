@@ -43,14 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			email: 								document.getElementById('email-field').value,
 			message:							document.getElementById('message-field').value
 		};
-		
+
 		$.ajax({
 			url: 'messages',
 			method: 'POST',
 			data: { message },
 			headers: { 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content') }
 		}).then(response => {
-			console.log(response);
+			let submitAndResponse = document.getElementById('submit-and-response');
+			let submitButton = document.getElementById('submit-email');
+			let emailResponse = document.createElement('SPAN');
+			emailResponse.innerText = response[0];
+
+			submitAndResponse.insertBefore(emailResponse, submitButton);
 		});
 	});
 

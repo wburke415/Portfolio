@@ -3617,3 +3617,14 @@ input, select, textarea {
 		display: flex;
 		justify-content: space-evenly;
 	}
+
+	#submit-and-response span {
+		color: white;
+		align-self: center;
+		margin-right: 25px;
+	}
+
+	#submit-and-response {
+		display: flex;
+		justify-content: flex-end;
+	}
