@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			emailResponse.innerText = response[0];
 
 			submitAndResponse.insertBefore(emailResponse, submitButton);
-			nameField.innerText = '';
-			emailField.innerTest = '';
-			messageField.innerText = '';
+			nameField.value = '';
+			emailField.value = '';
+			messageField.value = '';
 		});
 	});
 
