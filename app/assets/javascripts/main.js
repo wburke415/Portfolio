@@ -36,6 +36,23 @@ let translateAmount = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
 
+	let aboutNav = document.getElementById('about-nav');
+	let projectsNav = document.getElementById('projects-nav');
+	let contactNav = document.getElementById('contact-nav');
+
+	
+	aboutNav.addEventListener('click', () => {
+		document.getElementById('one').scrollIntoView({ behavior: 'smooth', block: 'start' })
+	});
+
+	projectsNav.addEventListener('click', () => {
+		document.getElementById("two").scrollIntoView({ behavior: 'smooth', block: 'start' });
+	});
+
+	contactNav.addEventListener('click', () => {
+		document.getElementById("four").scrollIntoView({ behavior: 'smooth', block: 'start' });
+	});
+
 	document.getElementById('email-form').addEventListener('submit', (e) => {
 		e.preventDefault();
 		let nameField = document.getElementById('name-field');
@@ -81,7 +98,7 @@ function skillsAnimation() {
 	const skillsList = document.getElementById('skills-list');
 
 	if (window.innerWidth > 1140) {
-		translateAmount = -19;
+		translateAmount = -15;
 	} else if (window.innerWidth > 980) {
 		translateAmount = -16;
 	} else if (window.innerWidth > 420) {
@@ -90,7 +107,7 @@ function skillsAnimation() {
 		translateAmount = -20;
 	}
 
-	if (translations < (skillsList.childElementCount - 4)) {
+	if (translations < (skillsList.childElementCount - 5)) {
 		translations += 1;
 	} else {
 		translations = 0;
